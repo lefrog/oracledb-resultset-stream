@@ -46,7 +46,6 @@ describe("OracleResultSetStream", function() {
                     .pipe(t)
                     .on("error", errorHandler)
                     .on("finish", function() {
-                        console.log("Done!");
                         done();
                     });
             });
